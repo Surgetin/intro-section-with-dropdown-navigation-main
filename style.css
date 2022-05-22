@@ -24,7 +24,6 @@ body {
 
 .main_container {
     width: 100%;
-    max-width: 1000px;
     justify-content: center;
     margin: 0 auto;
 }
