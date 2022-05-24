@@ -69,9 +69,10 @@ header {
 }
 
 .sub-menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    top: 1.5rem;
+    top: 3rem;
     width: 50%;
     background-color: var(--white);
     padding: 1rem .5rem;
@@ -79,15 +80,14 @@ header {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, 
     rgba(17, 17, 26, 0.1) 0px 16px 56px, 
     rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transition: 0.3s;
 }
 
 .sub-menu-features {
-    position: absolute;
     left: -28%;
 }
 
 .sub-menu-company {
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 35%;
@@ -101,7 +101,7 @@ header {
 }
 
 .sub-menu a {
-    color: black;
+    color: var(--gray);
 }
 
 .menu-btn {
@@ -112,9 +112,13 @@ input {
     display: none;
 }
 
-.nav-link:hover > .sub-menu {
+.nav-link:hover > .sub-menu,
+.nav-link:hover > .sub-menu-company {
     display: flex;
     flex-direction: column;
+    top: 1.2rem;
+    visibility: visible;
+    opacity: 1;
 }
 
 .buttons {
