@@ -84,10 +84,13 @@ header {
 }
 
 .sub-menu-features {
+    display: flex;
+    flex-direction: column;
     left: -28%;
 }
 
 .sub-menu-company {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 35%;
@@ -112,8 +115,7 @@ input {
     display: none;
 }
 
-.nav-link:hover > .sub-menu,
-.nav-link:hover > .sub-menu-company {
+.nav-link:hover > .sub-menu {
     display: flex;
     flex-direction: column;
     top: 1.2rem;
