@@ -118,7 +118,7 @@ input {
 .nav-link:hover > .sub-menu {
     display: flex;
     flex-direction: column;
-    top: 1.2rem;
+    top: 1.5rem;
     visibility: visible;
     opacity: 1;
 }
